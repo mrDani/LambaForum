@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.960
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambaForum", "LambaForum\LambaForum.csproj", "{CF699D8D-FDCE-49C9-ACF3-6E860DF5B368}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambaForum.Data", "LambaForum.Data\LambaForum.Data.csproj", "{873C35A6-3E76-487D-AC2F-2BB0D9F98398}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CF699D8D-FDCE-49C9-ACF3-6E860DF5B368}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF699D8D-FDCE-49C9-ACF3-6E860DF5B368}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF699D8D-FDCE-49C9-ACF3-6E860DF5B368}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF699D8D-FDCE-49C9-ACF3-6E860DF5B368}.Release|Any CPU.Build.0 = Release|Any CPU
+		{873C35A6-3E76-487D-AC2F-2BB0D9F98398}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{873C35A6-3E76-487D-AC2F-2BB0D9F98398}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{873C35A6-3E76-487D-AC2F-2BB0D9F98398}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{873C35A6-3E76-487D-AC2F-2BB0D9F98398}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {27C9CE01-12A4-4CF5-891A-D4B3D0254E5F}
+	EndGlobalSection
+EndGlobal
