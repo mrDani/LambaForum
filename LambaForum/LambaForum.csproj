@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
     <UserSecretsId>aspnet-LambaForum-C20FA3C7-9C10-497F-9820-F1B1815F3B76</UserSecretsId>
+    <StartupObject>LambaForum.Program</StartupObject>
   </PropertyGroup>
 
 
@@ -20,6 +21,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\LambaForum.Data\LambaForum.Data.csproj" />
+    <ProjectReference Include="..\LambaForum.Service\LambaForum.Service.csproj" />
   </ItemGroup>
 
 </Project>

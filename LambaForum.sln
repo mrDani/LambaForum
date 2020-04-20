@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambaForum", "LambaForum\La
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambaForum.Data", "LambaForum.Data\LambaForum.Data.csproj", "{873C35A6-3E76-487D-AC2F-2BB0D9F98398}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LambaForum.Service", "LambaForum.Service\LambaForum.Service.csproj", "{05D539AB-D1DC-4535-962C-388139DBF57A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LambaForum.Service", "LambaForum.Service\LambaForum.Service.csproj", "{05D539AB-D1DC-4535-962C-388139DBF57A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

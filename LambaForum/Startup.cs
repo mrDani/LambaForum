@@ -7,6 +7,7 @@ using Microsoft.Extensions.DependencyInjection;
 using LambaForum.Data;
 using LambaForum.Services;
 using LambaForum.Data.Models;
+using LambaForum.Service;
 
 namespace LambaForum
 {
@@ -31,6 +32,7 @@ namespace LambaForum
 
             // Add application services.
             services.AddTransient<IEmailSender, EmailSender>();
+            services.AddScoped<IForum, ForumService>();
 
             services.AddMvc();
         }
