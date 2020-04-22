@@ -24,4 +24,8 @@
     <ProjectReference Include="..\LambaForum.Service\LambaForum.Service.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Views\Post\" />
+  </ItemGroup>
+
 </Project>
