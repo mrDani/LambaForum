@@ -4,7 +4,7 @@ using System.Text;
 
 namespace LambaForum.Data
 {
-    interface IUpload
+    public interface IUpload
     {
     }
 }
