@@ -1,10 +1,11 @@
-﻿using System;
+﻿using LambaForum.Data;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace LambaForum.Service
 {
-    class UploadService
+    public class UploadService : IUpload
     {
     }
 }
