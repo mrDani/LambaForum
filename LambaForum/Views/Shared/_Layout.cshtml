@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
 @inject UserManager<LambaForum.Data.Models.ApplicationUser> UserManager
 @inject SignInManager<LambaForum.Data.Models.ApplicationUser> SignInManager
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -41,7 +42,7 @@
                             <ul class="dropdown-menu">
                                 <li role="separator" class="divider"></li>
                                 <li class="dropdown-header">Profile</li>
-                                <li><a asp-controller="Profie" asp-action="Detail">My Profile</a></li>
+                                <li><a asp-controller="Profile" asp-action="Detail" asp-route-id="@UserManager.GetUserId(User)">My Profile</a></li>
                                 @if (User.IsInRole("Admin"))
                                 {
                                     <li role="separator" class="divider"></li>

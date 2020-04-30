@@ -18,7 +18,7 @@ namespace LambaForum.Service
 
         public IEnumerable<ApplicationUser> GetAll()
         {
-            throw new NotImplementedException();
+            return _context.ApplicationUsers;
         }
 
         public ApplicationUser GetById(string id)
