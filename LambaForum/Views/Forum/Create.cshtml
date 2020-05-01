@@ -1,0 +1,26 @@
+﻿@model LambaForum.Models.Forum.AddForumModel
+
+<div class="container body-content">
+    <div class="row sectionHeader">
+        <div class="sectionHeading">
+            Create Forum
+        </div>
+    </div>
+    <div class="row">
+        <div id="createForumSection">
+            <form asp-action="AddForm" method="post" id="createForumForm" enctype="multipart/form-data">
+                <div asp-validation-summary="All" class="text-danger"></div>
+                <div class="form-group">
+                    <label asp-for="Title">Forum Title</label>
+                    <input asp-for="Title" class="form-control" placeholder="Choose Forum Title" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Description">Forum Description</label>
+                    <textarea asp-for="Description" class="form-control" placeholder="Write a brief description"></textarea>
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
