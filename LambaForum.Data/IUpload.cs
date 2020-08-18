@@ -6,5 +6,6 @@ namespace LambaForum.Data
 {
     public interface IUpload
     {
+        object GetBlobContainer(string connectionString);
     }
 }

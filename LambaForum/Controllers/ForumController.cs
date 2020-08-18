@@ -93,40 +93,40 @@ namespace LambaForum.Controllers
             return View(model);
         }
 
-        //[HttpPost]
-        //public async Task<IActionResult> AddForum(AddForumModel model)
-        //{
-        //    var imageUri = "/images/pic/pf-icon8.png";  
+        [HttpPost]
+        public async Task<IActionResult> AddForum(AddForumModel model)
+        {
+            var imageUri = "/images/pic/pf-icon8.png";
 
-        //    if (model.ImageUpload != null)
-        //    {
-        //        var blockBlob = UploadForumImage(model.ImageUpload);
-        //        imageUri = blockBlob.Uri.AbsoluteUri;
-        //    }
-        //    var forum = new Forum
-        //    {
-        //        Title = model.Title,
-        //        Description = model.Description,
-        //        Created = DateTime.Now,
-        //        ImageUrl = imageUri
-        //    };
-        //    await _forumService.Create(forum);
-        //    return RedirectToAction("Index", "Forum");
-        //}
+            if (model.ImageUpload != null)
+            {
+                var blockBlob = UploadForumImage(model.ImageUpload);
+                imageUri = blockBlob.Uri.AbsoluteUri;
+            }
+            var forum = new Forum
+            {
+                Title = model.Title,
+                Description = model.Description,
+                Created = DateTime.Now,
+                ImageUrl = imageUri
+            };
+            await _forumService.Create(forum);
+            return RedirectToAction("Index", "Forum");
+        }
 
-        //private CloudBlockBlob UploadForumImage(IFormFile file)
-        //{
-        //    var connectionString = _configuration.GetConnectionString("AzureStorageAccountConnectionString");
-        //    var container = _uploadService.GetBlobContainer(connectionString);
+        private CloudBlockBlob UploadForumImage(IFormFile file)
+        {
+            var connectionString = _configuration.GetConnectionString("AzureStorageAccountConnectionString");
+            var container = _uploadService.GetBlobContainer(connectionString);
 
-        //    var parsedContentDisposition = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
-        //    var filename = Path.Combine(parsedContentDisposition.FileName.Trim('"'));
+            var parsedContentDisposition = ContentDispositionHeaderValue.Parse(file.ContentDisposition);
+            var filename = Path.Combine(parsedContentDisposition.FileName.Trim('"'));
 
-        //    var blockBlob = container.GetBlockBlobReference(filename);
-        //    blockBlob.UploadFromStreamAsync(file.OpenReadStream());
-        //    return blockBlob;
+            var blockBlob = container.GetBlockBlobReference(filename);
+            blockBlob.UploadFromStreamAsync(file.OpenReadStream());
+            return blockBlob;
 
-        //}
+        }
 
         private ForumListingModel BuildForumListing(Post post)
         {
